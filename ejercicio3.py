@@ -4,7 +4,7 @@ class Alumno():
         self.clase=clase
         self.notas=notas
     def __str__(self):
-        return "El alumno {} se ha creado con exito  ".format(self.clase)
+        return "El alumno {} se ha creado con exito  ##".format(self.clase)
 clase=deque()
 notas=deque()
 clase.append(input("Introduzca el nombre del alumo: "))
@@ -17,4 +17,7 @@ def calificar(clase,notas):
             print("El alumno "+clase[i]+" ha suspendido Algoritmos")
         else:
             print("El alumno "+clase[i]+" ha aprobado Algoritmos")
+a=Alumno(clase[0],notas[0])
+b=Alumno(clase[1],notas[1])
+print(a,b)
 calificar(clase,notas)
