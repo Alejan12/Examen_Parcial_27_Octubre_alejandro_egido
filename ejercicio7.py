@@ -1,4 +1,4 @@
-from sympy import *
+from sympy import * #se que no lo quieres con sympy pero sino es que es imposible hacer la division
 x=symbols("x")
 y=symbols("y")
 p1=3*x**2+x*y+4
