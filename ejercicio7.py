@@ -1,5 +1,4 @@
 from sympy import *
-from collections import deque
 x=symbols("x")
 y=symbols("y")
 p1=3*x**2+x*y+4
@@ -23,11 +22,27 @@ p3.append("+")
 p3.append("x*y")
 p3.append("+")
 p3.append("4")
+p4=[]
+p4.append("3*x**2")
+p4.append("+")
+p4.append("x*y")
+p4.append("+")
+p4.append("4")
 def eliminar_termino(p3):
     p3.pop()
     p3.pop()
     return p3
 print("Eliminamos el ultimo termino del primer polinomio")
 print(eliminar_termino(p3))
+def existe(p1):
+    buscar=input("¿Que termino quieres buscar?")
+    for i in range(len(p1)):
+        if bucar== p1[i]:
+            print("El termino "+buscar+" esta en el polinomio")
+        else:
+            print("El termino "+buscar+" no esta en el polinomio")
+existe(p4)
+
+
 
 
