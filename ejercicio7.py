@@ -37,10 +37,12 @@ print(eliminar_termino(p3))
 def existe(p1):
     buscar=input("¿Que termino quieres buscar?")
     for i in range(len(p1)):
-        if bucar== p1[i]:
+        if buscar== p1[i]:
             print("El termino "+buscar+" esta en el polinomio")
+            break
         else:
             print("El termino "+buscar+" no esta en el polinomio")
+            break
 existe(p4)
 
 
